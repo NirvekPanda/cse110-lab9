@@ -164,7 +164,7 @@
             break;
           case 'Trigger a Global Error':
             try {
-              throw new TrackError("TrackError has been thrown");
+              throw new CustomError("Global Custom Error has been thrown");
               TrackJS.track('Testing TrackJS!');
             } catch (error) {
               console.error('Global error triggered:', error);
